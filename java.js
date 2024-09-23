@@ -20,11 +20,11 @@ document.getElementById('donate-btn-1').addEventListener('click', function(){
    const myAcoundMoney = getElementAllIdSelect('my-id-money');
    const noakhiteInputMoney = getInputById('noakhali-donate-inpur')
    if(isNaN(noakhiteInputMoney) || noakhiteInputMoney < 0){
-     alert('Please Enter Balide Number')
+     alert('Please Enter Validation Number.')
       return
    }
    if(noakhiteInputMoney > myAcoundMoney){
-    return alert('You dont have enough money')
+    return alert('You dont have enough money.')
    }
     
     const newDonateMoney = noakhiteInputMoney + noakhaliDonateMoney;
@@ -49,11 +49,11 @@ document.getElementById('donate-btn-2').addEventListener('click', function(){
    const feniInputMoney = getInputById('feni-donate-input')
    
    if(isNaN(feniInputMoney) || feniInputMoney < 0){
-    alert('Please Enter Balide Number')
+    alert('Please Enter Validation Number.')
      return
    }
    if(feniInputMoney > myAcoundMoney){
-    return alert('You dont have enough money')
+    return alert('You dont have enough money.')
    }
    const newDonateMoney = feniDonateMoney + feniInputMoney;
    document.getElementById('feni-money').innerText = newDonateMoney;
@@ -77,11 +77,11 @@ document.getElementById('donate-btn-3').addEventListener('click', function(){
    const quoteInputMoney = getInputById('quote-donate-input')
    
    if(isNaN(quoteInputMoney) || quoteInputMoney < 0){
-    alert('Please Enter Balide Number')
+    alert('Please Enter Validation Number.')
      return
    }
    if(quoteInputMoney > myAcoundMoney){
-    return alert('You dont have enough money')
+    return alert('You dont have enough money.')
    }
    const newDonateMoney = quoteDonateMoney + quoteInputMoney;
    document.getElementById('quote-money').innerText = newDonateMoney;
