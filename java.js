@@ -35,7 +35,7 @@ document.getElementById('donate-btn-1').addEventListener('click', function(){
     div.className = 'border p-4 rounded-lg my-4 '
     div.innerHTML = `
     <p class= "md:text-xl text-sm">${noakhiteInputMoney} Taka is Donated for Donated for Flood ot Noakhali, Bangladesh</p>
-    <p class="my-3 md:text-xl text-sm bg-slate-100 rounded-xl p-2">Date : ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
+    <p class="my-3 md:text-xl text-sm bg-slate-100 rounded-xl p-2">Date : ${new Date().toDateString()} ${new Date().toTimeString().split(' ')[0]} GET +0880 (Bangladesh Standard Time) </p>
     `
     const historySection = document.getElementById('history-section');
     historySection.appendChild(div)
@@ -63,7 +63,7 @@ document.getElementById('donate-btn-2').addEventListener('click', function(){
    div.className = 'border p-4 rounded-lg my-4 '
    div.innerHTML = `
     <p class="md:text-xl text-sm">${feniInputMoney} Donate for Flood Relief in Feni,Bangladesh</p>
-    <p class="my-3 md:text-xl text-sm bg-slate-100 rounded-xl p-2">Date : ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
+    <p class="my-3 md:text-xl text-sm bg-slate-100 rounded-xl p-2">Date : ${new Date().toDateString()} ${new Date().toTimeString().split(' ')[0]} GET +0880 (Bangladesh Standard Time) </p>
    `
    const historySection = document.getElementById('history-section');
    historySection.appendChild(div);
@@ -92,7 +92,7 @@ document.getElementById('donate-btn-3').addEventListener('click', function(){
    div.className = 'border p-4 rounded-lg my-4 '
    div.innerHTML = `
    <p class= "md:text-xl text-sm">${quoteInputMoney}  Aid for Injured in the Quota Movement</p>
-   <p class="my-3 bg-slate-100 md:text-xl text-sm rounded-xl p-2">Date : ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
+   <p class="my-3 md:text-xl text-sm bg-slate-100 rounded-xl p-2">Date : ${new Date().toDateString()} ${new Date().toTimeString().split(' ')[0]} GET +0880 (Bangladesh Standard Time) </p>
    `
    const historySection = document.getElementById('history');
    historySection.insertBefore(div, historySection.firstChild);
