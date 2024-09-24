@@ -19,7 +19,7 @@ document.getElementById('donate-btn-1').addEventListener('click', function(){
    const noakhaliDonateMoney = getElementAllIdSelect('donate-money-1')
    const myAcoundMoney = getElementAllIdSelect('my-id-money');
    const noakhiteInputMoney = getInputById('noakhali-donate-inpur')
-   if(isNaN(noakhiteInputMoney) || noakhiteInputMoney < 0){
+   if(isNaN(noakhiteInputMoney) || noakhiteInputMoney <= 0){
      alert('Please Enter Validation Number.')
       return
    }
@@ -48,7 +48,7 @@ document.getElementById('donate-btn-2').addEventListener('click', function(){
    const myAcoundMoney = getElementAllIdSelect('my-id-money');
    const feniInputMoney = getInputById('feni-donate-input')
    
-   if(isNaN(feniInputMoney) || feniInputMoney < 0){
+   if(isNaN(feniInputMoney) || feniInputMoney <= 0){
     alert('Please Enter Validation Number.')
      return
    }
@@ -76,7 +76,7 @@ document.getElementById('donate-btn-3').addEventListener('click', function(){
    const myAcoundMoney = getElementAllIdSelect('my-id-money');
    const quoteInputMoney = getInputById('quote-donate-input')
    
-   if(isNaN(quoteInputMoney) || quoteInputMoney < 0){
+   if(isNaN(quoteInputMoney) || quoteInputMoney <= 0){
     alert('Please Enter Validation Number.')
      return
    }
